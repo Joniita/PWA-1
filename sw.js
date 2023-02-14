@@ -2,9 +2,9 @@ const STATIC_CACHE = "static";
 
 const APP_SHELL = [
     '/',
-    'css',
+    'css/style.css',
     'js/main.js',
-    'img',
+    'img/EC.png',
 ];
 
 self.addEventListener("install", e => {
