@@ -1,10 +1,10 @@
 (function ($) {
 
-    
+    let swLocation = "sw.js"
 
     if (navigator.serviceWorker) {
-        
-        navigator.serviceWorker.register("/sw.js");
+        if (window.location.href.includes("localhost")) swLocation = "/sw.js";
+        navigator.serviceWorker.register(swLocation);
     }
 
     "use strict";
