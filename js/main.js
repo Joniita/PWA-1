@@ -1,10 +1,10 @@
 (function ($) {
 
-    let swLocation = "sw.js"
+    
 
     if (navigator.serviceWorker) {
         
-        navigator.serviceWorker.register(swLocation);
+        navigator.serviceWorker.register("/sw.js");
     }
 
     "use strict";
