@@ -1,7 +1,7 @@
 const STATIC_CACHE = "static";
 
 const APP_SHELL = [
-    '/',
+    'index.html',
     'css/style.css',
     'js/main.js',
     'img/EC.png',
