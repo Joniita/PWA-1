@@ -2,7 +2,8 @@
 
     let swLocation = "/sw.js"
 
-    if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker) {
+       
         navigator.serviceWorker.register(swLocation);
     }
 
