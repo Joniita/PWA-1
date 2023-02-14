@@ -1,6 +1,6 @@
 (function ($) {
 
-    let swLocation = "/sw.js"
+    let swLocation = "sw.js"
 
     if (navigator.serviceWorker) {
        
