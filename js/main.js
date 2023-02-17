@@ -1,5 +1,6 @@
 (function ($) {
 
+    // cargando el services worker
     let swLocation = "sw.js"
 
     if (navigator.serviceWorker) {
@@ -7,9 +8,17 @@
         navigator.serviceWorker.register(swLocation);
     }
 
+    // Fetch a la api
+    fetch("https://back-inmobiliaria-production.up.railway.app/api")
+        .then(res => res.json())
+        .then(response => console.log(response));
+
     "use strict";
+
+
+
     
-    // Dropdown on mouse hover
+    //mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
@@ -27,7 +36,7 @@
     });
     
     
-    // Back to top button
+    //top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
@@ -41,7 +50,7 @@
     });
 
 
-    // Testimonials carousel
+    // Carousel de testimonios
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
