@@ -8,10 +8,7 @@
         navigator.serviceWorker.register(swLocation);
     }
 
-    // Fetch a la api
-    fetch("https://back-inmobiliaria-production.up.railway.app/api")
-        .then(res => res.json())
-        .then(response => console.log(response));
+    
 
     "use strict";
 
