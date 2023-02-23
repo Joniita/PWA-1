@@ -15,7 +15,7 @@ allProperty(data => {
                         <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>${i.rooms}</small>
                         <small class="m-0"><i class="far text-primary mr-2"></i>${i.area}m2</small>
                     </div>
-                    <a class="h5" href="">Referencia de inmueble: ${i.reference}</a>
+                    <a href="./detail.html?id=${i._id}">Reference: ${i.reference}</a>
                     <div class="border-top mt-4 pt-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
