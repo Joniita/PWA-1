@@ -1,4 +1,4 @@
-import allProperty from './routes.js';
+import {allProperty} from './routes.js';
 
 let content = document.getElementById('prominentsIndex');
 
